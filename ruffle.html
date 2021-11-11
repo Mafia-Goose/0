@@ -1,0 +1,13 @@
+<!doctype html>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("dbz.swf");
+    });
+</script>
+<script src="path/to/ruffle/ruffle.js"></script>
+</html>
